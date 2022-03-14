@@ -1,0 +1,169 @@
+.product-detail {
+    width: 100%;
+    
+    &__header {
+        width: 100%;
+        height: 60px;
+    }
+
+    .link {
+        padding: 30px 0;
+        padding-left: 60px;
+        a {
+            display: inline-block;
+            color: black;
+            text-transform: capitalize;
+            padding: 0 5px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        a:not(:last-child) {
+            cursor: pointer;
+            &:hover {
+                color: orange;
+            }
+        }
+
+        a:last-child {
+            opacity: 0.6;
+        }
+    }
+    
+    &__row {
+        padding: 0 60px;
+        margin-bottom: 20px;
+
+        .info {
+            width: 50%;
+        }
+
+        .story {
+            width: 50%;
+            padding-left: 40px;
+        }
+
+        .info, .story {
+            padding-right: 60px;
+            padding-bottom: 20px;
+            h4 {
+                padding-bottom: 10px;
+            }
+
+            p {
+                max-width: 80%;
+            }
+        }
+    }
+
+    &__img {
+        width: 50%;
+
+        .img-wrap {
+            width: 100%;
+            padding-bottom: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    &__info {
+        width: 50%;
+        padding: 0 80px 0 40px;
+
+        .name {
+            font-size: 18px;
+            text-transform: capitalize;
+        }
+
+        .price {
+            font-size: 32px;
+            color: orange;
+            margin: 10px 0;
+        }
+
+        p {
+            font-weight: 400;
+            padding-bottom: 10px;
+        }
+
+        .size span {
+            padding: 5px 15px;
+            background: silver;
+            color: white;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .size .active {
+            background: orange;
+        }
+
+        .toping span {
+            padding: 5px 10px;
+            background: silver;
+            border-radius: 5px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        .num {
+            width: 100%;
+            margin-top: 15px;
+            font-size: 20px;
+
+            i {
+                width: 30px;
+                height: 30px;
+                background: orange;
+                text-align: center;
+                line-height: 30px;
+                border-radius: 3px;
+                color: white;
+                cursor: pointer;
+            }
+
+            p {
+                min-width: 40px;
+                text-align: center;
+                font-weight: 500;
+            }
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: white;
+            background: orange;
+            outline: none;
+            border: none;
+            font-size: 15px;
+            font-weight: 600;
+            margin-right: 10px;
+            cursor: pointer;
+            &:hover {
+                background: orangered;
+            }
+        }
+    }
+
+    .border {
+        margin: 0 60px;
+        text-transform: capitalize;
+        padding-top: 20px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+}

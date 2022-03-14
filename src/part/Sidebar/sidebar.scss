@@ -1,0 +1,39 @@
+.sidebar {
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    background: rgba($color: #000000, $alpha: 0.06);
+    
+    h4 {
+        padding-left: 20px;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    &__list {
+        margin-top: 15px;
+    }
+
+    a {
+        display: block;
+        color: black;
+        text-transform: capitalize;
+        padding: 8px 0;
+        padding-left: 20px;
+        font-weight: 500;
+        background: rgba($color: #000000, $alpha: 0.04);
+        cursor: pointer;
+        margin-bottom: 2px;
+        transition: all 0.2s;
+
+        &:hover {
+            background: orange;
+            color: white;
+        }
+    }
+
+    a.active {
+        background: orange;
+        color: white;
+    }
+}
